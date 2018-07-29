@@ -1,0 +1,17 @@
+{
+  "name": "blog-for-you",
+  "version": "1.0.0",
+  "description": "A Thinkful Challenge to make a blog",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.16.3",
+    "morgan": "^1.7.0",
+    "uuid": "^3.3.2"
+  }
+}
