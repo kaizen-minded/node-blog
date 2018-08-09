@@ -1,2 +1,7 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: 0801861f-5323-4e4f-8a74-5ad6f20591a9
+    app: node-blog1
