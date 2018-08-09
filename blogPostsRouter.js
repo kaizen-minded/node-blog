@@ -47,14 +47,14 @@ router.put('/:id', jsonParser, (req, res) => {
   }
 
   console.log(`Updating blog post \`${req.params.id}\``);
-  BlogPosts.update({
+  const updatedBlog = BlogPosts.update({
     id: req.params.id,
     title: req.body.title,
     content: req.body.content,
     author: req.body.author,
     publishDate: req.body.publishDate
   });
-  res.status(204).end();
+  res.status(200).json(updatedBlog);
 });
 
 router.delete("/:id", (req, res) =>{

@@ -4,7 +4,8 @@
   "description": "A Thinkful Challenge to make a blog",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha --exit"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +14,10 @@
     "express": "^4.16.3",
     "morgan": "^1.7.0",
     "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "mocha": "^5.2.0"
   }
 }
